@@ -16,24 +16,24 @@ Key Features:
 ---
 
 ## Project Structure
+
 Homework 33/
 ├── src/
-│ ├── audio/ # Background music
-│ │ └── resident_evil_4.mp3
-│ ├── css/ # Compiled CSS (Gulp)
-│ │ └── style.css
-│ ├── fonts/ # Project fonts
-│ │ └── Fonts1.ttf
-│ ├── image/ # Images (Umbrella logo)
-│ │ └── Umbrella.png
-│ ├── scss/ # SCSS files
-│ │ └── style.scss
-│ └── index.html # Home page
-├── gulpfile.js # Gulp configuration
-├── package-lock.json # Locks down the exact versions of all dependencies, including nested ones, so that the installation is the same on all machines.
-├── package.json # Project dependencies
-└── README.md # This file
-package-lock.json
+│   ├── audio/        # Background music
+│   │   └── resident_evil_4.mp3
+│   ├── css/          # Compiled CSS (Gulp output)
+│   │   └── style.css
+│   ├── fonts/        # Project fonts
+│   │   └── Fonts1.ttf
+│   ├── image/        # Images (Umbrella logo)
+│   │   └── Umbrella.png
+│   ├── scss/         # SCSS source files
+│   │   └── style.scss
+│   └── index.html    # Home page
+├── gulpfile.js       # Gulp tasks configuration
+├── package-lock.json # Exact dependency versions lock
+├── package.json      # Project dependencies
+└── README.md         # Project documentation
 ---
 
 ## Technologies
