@@ -1,0 +1,86 @@
+$red: crimson;
+$dark-bg: #0b0b0b;
+$column-bg: #111;
+
+@font-face {
+  font-family: "MyResidentFont";
+  src: url("../fonts/Fonts1.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "MyResidentFont", 'Courier New', monospace;
+  background: $dark-bg;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+h1 {
+  font-size: 2.5rem;
+  color: $red;
+  text-shadow: 0 0 10px $red, 0 0 20px darkred, 0 0 30px rgba(255,0,0,0.5);
+  margin-bottom: 40px;
+  animation: flicker 1.5s infinite;
+  gap: 15px; 
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; 
+  }
+}
+
+@keyframes flicker {
+  0%, 100% { text-shadow: 0 0 10px $red, 0 0 20px darkred; }
+  50% { text-shadow: 0 0 15px crimson, 0 0 25px red; }
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.column {
+  background: $column-bg;
+  border: 2px solid $red;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255,0,0,0.7);
+  }
+
+  h2 {
+    color: $red;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px darkred;
+  }
+
+  .subtitle {
+    font-style: italic;
+    color: darkred;
+    margin-bottom: 10px;
+    text-shadow: 0 0 3px crimson;
+  }
+
+  p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
