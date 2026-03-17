@@ -14,7 +14,7 @@ Key Features:
 - CSS integration and optimization via Gulp: SCSS compilation, auto-prefixing, minification, and automatic page refresh upon changes.
 
 ---
-
+```
 ## Project Structure
 
 Homework 33/
@@ -34,6 +34,7 @@ Homework 33/
 ├── package-lock.json # Exact dependency versions lock
 ├── package.json      # Project dependencies
 └── README.md         # Project documentation
+```
 ---
 
 ## Technologies
